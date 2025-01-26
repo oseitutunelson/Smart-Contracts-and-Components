@@ -6,7 +6,7 @@ require('dotenv').config();
 const {SEPOLIA_PRIVATE_KEY,ALCHEMY_API_KEY} = process.env;
 
 module.exports = {
-  solidity: "0.8.27",
+  solidity: "0.8.20",
   networks: {
     sepolia: {
         url: `https://worldchain-sepolia.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,

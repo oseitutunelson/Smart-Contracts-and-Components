@@ -1,6 +1,12 @@
 //SPDX-License-Identifier:MIT
 
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.20;
+
+/**
+ * @title Nft Item Contract
+ * @author sexyprogrammer
+ * @notice An nft item contract for minting, listing and selling nfts or rwa's 
+ */
 
 import {ERC721URIStorage,ERC721} from "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
@@ -21,7 +27,7 @@ contract Item is ERC721URIStorage,Ownable{
     // Counter for token IDs
    uint256 private _tokenIds;
 
-
+    //Item structure
     struct ItemStructure{
         uint256 tokenId;
         address creator;
